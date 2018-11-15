@@ -80,7 +80,7 @@ class AppVitrine extends Component {
             return (
                 <div>
                     <div id="containerReference">
-                    <div>Produtos Visualizados</div>
+                    <div>Produto Visualizado</div>
                         <Produto item={items.reference.item} key={items.reference.item.businessId}/>
                     </div>
                     <div id="containerRecommendation">
