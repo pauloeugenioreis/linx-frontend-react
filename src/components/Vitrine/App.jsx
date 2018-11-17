@@ -9,22 +9,22 @@ function OldPrice(props) {
         return null;
     }
     return (
-        <span className="oldPrice"> De: <strong>{props.price}</strong></span>
+        <span className="old-price"> De: <strong>{props.price}</strong></span>
     );
 }
 
 function Produto(props) {
     return (
-        <div className="vitrineProdutos">
+        <div className="vitrine-produtos">
             <a className="link" title={props.item.name} href={props.item.detailUrl}>
                                     <span>
                                         <img src={props.item.imageName} alt={props.name}></img>
                                     </span>
                 <strong>{props.item.name}</strong>
-                <div className="produtoDetalhe">
+                <div className="produto-detalhe">
                     <OldPrice price={props.item.oldPrice}/>
                     <span className="price"> Por: {props.item.price}</span>
-                    <span className="paymentConditions"
+                    <span className="payment-conditions"
                           dangerouslySetInnerHTML={{__html: props.item.productInfo.paymentConditions}}/>
                 </div>
             </a>
@@ -79,11 +79,11 @@ class AppVitrine extends Component {
         } else {
             return (
                 <div>
-                    <div id="containerReference">
+                    <div id="container-reference">
                         <div>Produto Visualizado</div>
                         <Produto item={items.reference.item} key={items.reference.item.businessId}/>
                     </div>
-                    <div id="containerRecommendation">
+                    <div id="container-recommendation">
                         <div>Produtos recomendados</div>
                         <div id="recommendation">
                             <Slider {...settings}>
