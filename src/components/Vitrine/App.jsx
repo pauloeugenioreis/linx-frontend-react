@@ -43,7 +43,7 @@ class AppVitrine extends Component {
     }
 
     componentDidMount() {
-        fetch("https://api.myjson.com/bins/oyc02")
+        fetch(this.props.api)
             .then(res => res.json())
             .then(
                 (result) => {
