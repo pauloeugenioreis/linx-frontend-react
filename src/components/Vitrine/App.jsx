@@ -17,9 +17,9 @@ function Produto(props) {
     return (
         <div className="vitrine-produtos">
             <a className="link" title={props.item.name} href={props.item.detailUrl}>
-                                    <span>
-                                        <img src={props.item.imageName} alt={props.name}></img>
-                                    </span>
+                <span>
+                    <img src={props.item.imageName} alt={props.name}></img>
+                </span>
                 <strong>{props.item.name}</strong>
                 <div className="produto-detalhe">
                     <OldPrice price={props.item.oldPrice}/>
